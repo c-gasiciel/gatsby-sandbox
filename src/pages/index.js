@@ -1,5 +1,19 @@
 import * as React from "react"
+import Layout from '../components/layout'
 
+const IndexPage = () => {
+  return(
+      <Layout pageTitle="Home Page">
+        <p>This is a test page for playing 
+        around with Gatsby</p>
+      </Layout>
+  )
+}
+
+export default IndexPage
+
+
+/*
 // styles
 const pageStyles = {
   color: "#232129",
@@ -123,8 +137,9 @@ const links = [
       "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
     color: "#663399",
   },
-]
+] */
 
+/*
 // markup
 const IndexPage = () => {
   return (
@@ -182,3 +197,4 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+*/
