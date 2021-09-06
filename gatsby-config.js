@@ -3,5 +3,10 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "gatsby sandbox",
   },
-  plugins: ["gatsby-plugin-styled-components"],
+  plugins: [
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
 };
