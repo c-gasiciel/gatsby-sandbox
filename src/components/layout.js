@@ -1,8 +1,10 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 import { 
     container,
     heading,
+    navContainer,
     navLinks,
     navLinkItem,
     navLinkText
@@ -12,8 +14,13 @@ const Layout = ({ pageTitle, children }) => {
     return (
         <div className={container}>
             <title>{pageTitle}</title>
-            <nav>
+            <nav className={navContainer}>
                 <ul className={navLinks}>
+                    <li className={navLinkItem}>
+                        <Link to="/">
+                            <StaticImage src="https://via.placeholder.com/250x50" alt="My Technology Firm logo"/>
+                        </Link>
+                    </li>
                     <li className={navLinkItem}>
                         <Link to="/">Home</Link>
                     </li>
