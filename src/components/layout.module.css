@@ -1,4 +1,4 @@
-.container{
+.layout-container{
     display: flex;
     flex-direction: column;
     background-color: yellow;
@@ -10,8 +10,17 @@
 }
 
 .nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: blue;
-    width: 100%;
+    padding: .2rem 2rem .2rem 2rem;
+}
+
+.nav-logo{
+    text-transform: uppercase;
+    margin-right: 2rem;
 }
 
 .heading{
@@ -29,5 +38,5 @@
 }
 
 .nav-link-text{
-    color: black;
+    color: white;
 }
