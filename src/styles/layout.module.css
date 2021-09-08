@@ -1,12 +1,31 @@
 .layout-container{
     display: flex;
     flex-direction: column;
-    background-color: yellow;
+    background: #69D6FB;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
     font-family: sans-serif;
+}
+
+h1{
+    margin: 0;
+}
+
+.page-header{
+    display: flex;
+    flex-direction: column;
+    background: rgba(51, 51, 51, 0.8);
+    box-shadow: 0 0 1rem black;
+    padding: .2em 2em .2em 2em;
+}
+
+.header-contact{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: .8rem;
+    color: white;
+    padding: 0;
+    margin: .5rem 0rem 0rem 0rem;
 }
 
 .nav-container{
@@ -14,9 +33,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: rgba(51, 51, 51, 0.8);
-    box-shadow: 0 0 1rem black;
-    padding: .2rem 2rem .2rem 2rem;
+    padding: .5rem 0 .5rem 0;
+    margin: 0;
 }
 
 .nav-logo{
