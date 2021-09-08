@@ -1,0 +1,20 @@
+.nav-link-item{
+    padding-right: 2rem;
+}
+
+.nav-link-text{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link-text:active{
+
+}
+
+.nav-link-text:hover{
+    
+}
+
+.nav-link-text:visted{
+    color: white;
+}

@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import {
     navLinkItem,
     navLinkText
-} from './layout.module.css';
+} from '../styles/navLink.module.css';
 
 const NavLink = ({linkURL, linkName}) => {
     return (

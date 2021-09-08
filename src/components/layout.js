@@ -6,9 +6,7 @@ import {
     navContainer,
     navLogo,
     navLinks,
-    navLinkItem,
-    navLinkText
-} from './layout.module.css'
+} from '../styles/layout.module.css'
 import NavLink from './navLink'
 
 const Layout = ({ pageTitle, children }) => {
@@ -16,8 +14,8 @@ const Layout = ({ pageTitle, children }) => {
         <div className={layoutContainer}>
             <title>{pageTitle}</title>
             <nav className={navContainer}>
-                <h1 className={navLogo}>
-                    <Link to="/">My Technology Firm</Link>
+                <h1>
+                    <Link className={navLogo} to="/">My Technology Firm</Link>
                 </h1>
                 <ul className={navLinks}>
                     <NavLink linkURL="/" linkName="Home" />
