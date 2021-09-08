@@ -1,0 +1,26 @@
+.home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home-content p{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.button{
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: none;
+    padding: 0.5rem 2rem;
+    border: 1px solid black;
+}
+
+.button:visted{
+    color: black;
+}

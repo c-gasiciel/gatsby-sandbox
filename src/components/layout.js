@@ -8,6 +8,7 @@ import {
     navContainer,
     navLogo,
     navLinks,
+    mainContent,
 } from '../styles/layout.module.css'
 import NavLink from './navLink'
 
@@ -31,9 +32,11 @@ const Layout = ({ pageTitle, children}) => {
                     </nav>
                 </div>
             </header>
-            <main>
+            <main className={ mainContent } >
                 {children}
             </main>
+            <footer>     
+            </footer>
         </div>
     )
 }

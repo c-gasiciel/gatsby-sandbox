@@ -1,12 +1,15 @@
 import * as React from "react"
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
+import { homeContent, button } from '../styles/index.module.css';
 
 const IndexPage = () => {
   return(
       <Layout pageTitle="Home Page">
-        <p>This is a test page for playing 
-        around with Gatsby</p>
+        <div className={ homeContent }>
+            <p>IT solutions for small business</p>
+            <a className={ button } href="/">Learn More</a>
+        </div>
       </Layout>
   )
 }
