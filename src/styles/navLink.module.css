@@ -5,13 +5,32 @@
 .nav-link-text{
     color: white;
     padding: 1rem 1rem;
+    display: inline-block;
+    position: relative;
     text-decoration: none;
     text-transform: uppercase;
 }
 
+.nav-link-text::after {
+    content: '';
+    width: 100%;
+    height: 0.1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link-text:hover::after, .nav-link-text:focus::after {
+    transform: scaleX(1);
+}
+/*
 .nav-link-text:hover{
     background: rgba(51, 51, 51, 1);
-}
+} */
 
 .nav-link-text:visted{
     color: white;
