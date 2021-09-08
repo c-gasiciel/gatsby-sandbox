@@ -7,7 +7,6 @@ const IndexPage = () => {
       <Layout pageTitle="Home Page">
         <p>This is a test page for playing 
         around with Gatsby</p>
-        <StaticImage src="../images/hero.jpg" alt="" />
       </Layout>
   )
 }

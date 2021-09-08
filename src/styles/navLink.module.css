@@ -1,18 +1,16 @@
 .nav-link-item{
-    padding-right: 2rem;
+    margin: 0rem 0rem 0rem .5rem;
 }
 
 .nav-link-text{
     color: white;
+    padding: 1rem 1rem;
     text-decoration: none;
-}
-
-.nav-link-text:active{
-
+    text-transform: uppercase;
 }
 
 .nav-link-text:hover{
-    
+    background: rgba(51, 51, 51, 1);
 }
 
 .nav-link-text:visted{
