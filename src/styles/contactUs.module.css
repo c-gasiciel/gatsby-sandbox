@@ -1,0 +1,20 @@
+.contact-box-container{
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3rem auto;
+    width: 90%;
+}
+
+.contact-box{
+    border: 1px solid black;
+    width: 45%;
+}
+
+.contact-box h3{
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}

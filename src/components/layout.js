@@ -25,9 +25,9 @@ const Layout = ({ pageTitle, children}) => {
                     <nav className={ navContainer }>
                         <ul className={ navLinks }>
                             <NavLink linkURL="/" linkName="Home" />
-                            <NavLink linkURL="/services" linkName="Services" />
-                            <NavLink linkURL="/about" linkName="About Us" />
-                            <NavLink linkURL="/contact" linkName="Contact Us" />
+                            <NavLink linkURL="#services" linkName="Services" />
+                            <NavLink linkURL="#about-us" linkName="About Us" />
+                            <NavLink linkURL="#contact-us" linkName="Contact Us" />
                         </ul>
                     </nav>
                 </div>
