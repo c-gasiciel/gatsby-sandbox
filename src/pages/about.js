@@ -1,15 +1,10 @@
 import * as React from 'react'
-//import Layout from '../components/layout'
-import PageSection from '../components/pageSection';
+import ParallaxElementWrapper from '../components/parallaxElementWrapper';
 
 const AboutPage = () => {
     return(
-        <PageSection sectionId="about-me">
-            <p>
-                Hello!  So many details about me!
-            </p>
-        </PageSection>
-    )
+        <ParallaxElementWrapper />
+    );
 }
 
 export default AboutPage

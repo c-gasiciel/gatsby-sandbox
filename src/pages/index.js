@@ -1,5 +1,6 @@
 import * as React from "react"
 import Layout from '../components/layout';
+import Home from '../components/home';
 import Services from '../components/services';
 import ContactUs from '../components/contactUs';
 import { StaticImage } from 'gatsby-plugin-image'
@@ -8,10 +9,7 @@ import { homeContent, button } from '../styles/index.module.css';
 const IndexPage = () => {
   return(
       <Layout pageTitle="Home Page">
-        <div className={ homeContent }>
-            <p>IT solutions for small business</p>
-            <a className={ button } href="/">Learn More</a>
-        </div>
+        <Home />
         <Services />
         <div id="about-us">
           <p>
