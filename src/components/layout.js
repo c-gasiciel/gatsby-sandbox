@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import { 
     layoutContainer,
     pageHeader,
@@ -13,9 +13,20 @@ import {
 import NavLink from './navLink'
 
 const Layout = ({ pageTitle, children}) => {
+    const data = useStaticQuery(graphql `
+        query{
+            site{
+                siteMetadata{
+                    title
+                }
+            }
+        }
+    `);
+
+
     return (
         <div className={ layoutContainer }>
-            <title>{ pageTitle }</title>
+            <title>{ pageTitle } | { data.site.siteMetadata.title }</title>
             <header className={ pageHeader }>
                 <h1>
                     <Link className={ navLogo } to="/">My Technology Firm</Link>
