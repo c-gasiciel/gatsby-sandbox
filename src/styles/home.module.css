@@ -1,0 +1,31 @@
+.home-content{
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    height: 60%;
+    width: 50%;
+}
+
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.button{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: none;
+    padding: 0.5rem 2rem;
+    border: 1px solid black;
+}
+
+.button:visted{
+    color: black;
+}

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useEffect, useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import { 
@@ -17,6 +18,21 @@ const Layout = ({ pageTitle, children}) => {
             }
         }
     `);
+
+
+    const [ offset, setOffset ] = useState(0)
+
+    useEffect(() => {
+        function handleScroll(){
+            setOffset(window.pageYOffset)
+        }
+
+        window.addEventListener("scroll", handleScroll)
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [])
 
 
     return (

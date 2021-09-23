@@ -1,6 +1,7 @@
 import React from 'react';
 import PageSection from './pageSection';
-import { homeContent, button } from '../styles/index.module.css';
+import { homeContent, button } from '../styles/home.module.css';
+import { card } from '../styles/home.module.css';
 
 const Home = () =>{
     return(

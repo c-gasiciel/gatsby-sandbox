@@ -4,6 +4,8 @@
 
 .nav-link-text{
     color: black;
+    font-weight: 600;
+    letter-spacing: .2rem;
     padding: 0rem 0rem .5rem 0rem;
     display: inline-block;
     position: relative;
