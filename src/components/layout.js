@@ -19,7 +19,7 @@ const Layout = ({ pageTitle, children}) => {
         }
     `);
 
-
+    /*
     const [ offset, setOffset ] = useState(0)
 
     useEffect(() => {
@@ -32,7 +32,7 @@ const Layout = ({ pageTitle, children}) => {
         return () => {
             window.removeEventListener("scroll", handleScroll)
         }
-    }, [])
+    }, []) */
 
 
     return (

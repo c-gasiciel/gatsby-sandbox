@@ -8,6 +8,11 @@
     background-image: linear-gradient(rgb(105,214,251, 0.8), rgb(105,214,251, 0.8)),
     url("../images/hero-2.jpg");
     background-size: cover;
+
+      /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main-content{
