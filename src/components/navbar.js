@@ -1,5 +1,6 @@
 import React from 'react';
 import NavLink from './navLink';
+import PaintDripLink from './paintDripLink';
 import { 
     navContainer,
     navLinks
@@ -10,9 +11,9 @@ const Navbar = () =>{
         <nav className={ navContainer }>
             <ul className={ navLinks }>
                 <NavLink linkURL="/" linkName="Home" />
-                <NavLink linkURL="#services" linkName="Services" />
-                <NavLink linkURL="#about-us" linkName="About Us" />
-                <NavLink linkURL="#contact-us" linkName="Contact Us" />
+                <PaintDripLink linkURL="/servicesPage" linkName="Services"/>
+                <NavLink linkURL="/#about-us" linkName="About Us" />
+                <NavLink linkURL="/#contact-us" linkName="Contact Us" />
             </ul>
         </nav>
     );

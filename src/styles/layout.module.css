@@ -12,6 +12,13 @@
   background-repeat: no-repeat;
 }
 
+.layout-no-bg{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
 .main-content{
     /*height: 88%; */
 }
