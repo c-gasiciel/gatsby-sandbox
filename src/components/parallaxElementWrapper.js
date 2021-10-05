@@ -8,6 +8,7 @@ import {
 
 
 const ParallaxElementWrapper = ({ element, props }) => {
+    /*
     return(
         <ParallaxProvider>
             <div className={app}>
@@ -16,6 +17,10 @@ const ParallaxElementWrapper = ({ element, props }) => {
             </div>
         </ParallaxProvider>
     );
+    */
+   return(
+       <div></div>
+   );
 }
 
 export default ParallaxElementWrapper;
