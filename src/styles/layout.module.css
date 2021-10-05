@@ -1,9 +1,6 @@
 .layout-container{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    margin: 0;
-    padding: 0;
     font-family: sans-serif;
     background-image: linear-gradient(rgb(105,214,251, 0.8), rgb(105,214,251, 0.8)),
     url("../images/hero-2.jpg");
@@ -11,5 +8,5 @@
 }
 
 .main-content{
-    height: 88vh;
+    /*height: 88%; */
 }

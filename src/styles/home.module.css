@@ -16,16 +16,20 @@
 }
 
 .button{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 1rem 3rem;
+}
+
+
+.button-text{
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
-    background: none;
-    padding: 0.5rem 2rem;
-    border: 1px solid black;
 }
 
-.button:visted{
+.button-text:visted{
     color: black;
 }

@@ -1,7 +1,15 @@
 .text-section{
     background-color: transparent;
     box-sizing: border-box; 
-    height: 90vh;
+    height: 100vh;
     padding: 3rem 5%;
     width: 100%;
+}
+
+.text-section:nth-of-type(1), .text-section:last-child{
+    height: 90vh;
+}
+
+.text-section:nth-of-type(2n){
+    background-color: aliceblue;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import PageSection from './pageSection';
-import { homeContent, button } from '../styles/home.module.css';
+import { homeContent, button, buttonText } from '../styles/home.module.css';
 import { card } from '../styles/home.module.css';
 
 const Home = () =>{
@@ -8,7 +8,9 @@ const Home = () =>{
         <PageSection sectionId="home">
             <div className={ homeContent }>
                 <p>IT solutions for small business</p>
-                <a className={ button } href="/">Learn More</a>
+                <button className={ button }>
+                    <a className={ buttonText } href="/">Learn More</a>
+                </button>
             </div>
         </PageSection>
     );

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useEffect, useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Header from './header';
+import Footer from './footer';
 import { 
     layoutContainer,
     mainContent,
@@ -20,7 +21,7 @@ const Layout = ({ pageTitle, children}) => {
     `);
 
 
-    const [ offset, setOffset ] = useState(0)
+    /*const [ offset, setOffset ] = useState(0)
 
     useEffect(() => {
         function handleScroll(){
@@ -32,7 +33,7 @@ const Layout = ({ pageTitle, children}) => {
         return () => {
             window.removeEventListener("scroll", handleScroll)
         }
-    }, [])
+    }, []) */
 
 
     return (
@@ -40,10 +41,9 @@ const Layout = ({ pageTitle, children}) => {
             <title>{ pageTitle } | { data.site.siteMetadata.title }</title>
             <Header />
             <main className={ mainContent } >
-                {children}
+                { children }
             </main>
-            <footer>     
-            </footer>
+            <Footer />
         </div>
     )
 }
