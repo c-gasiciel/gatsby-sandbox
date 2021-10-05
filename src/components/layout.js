@@ -6,13 +6,14 @@ import Header from './header';
 import Footer from './footer';
 import { 
     layoutContainer,
-    layoutNoBackground,
+    layoutBg,
+    layoutNoBg,
     mainContent,
 } from '../styles/layout.module.css';
 
 
 /* Pages that should be styled to have a background */
-const pagesWithBackground = ['/'];
+const pagesWithBackground = ['/', '/contact'];
 
 
 const Layout = ({ pageTitle, children}) => {
@@ -44,12 +45,13 @@ const Layout = ({ pageTitle, children}) => {
 
     /* Get current pathname for styling */
     const { pathname } = useLocation();
+    const classes = `${ layoutContainer } 
+                    ${pagesWithBackground.includes(pathname) ? layoutBg : layoutNoBg }`;
 
 
 
     return (
-        <div className={ 
-            pagesWithBackground.includes(pathname) ? layoutContainer : layoutNoBackground }>
+        <div className={ classes }>
             <title>{ pageTitle } | { data.site.siteMetadata.title }</title>
             <Header />
             <main className={ mainContent } >
