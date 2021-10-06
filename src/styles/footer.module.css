@@ -1,6 +1,6 @@
 .footer{
     height: 10vh;
-    padding: 1rem 1rem 1.5rem 1rem;
+    padding: 1rem 1rem 5px 1rem;
     width: 100%;
 }
 
@@ -8,4 +8,11 @@
     font-size: .8rem;
     color: black;
     font-weight: bold;
+}
+
+/* Mobile styling */
+@media only screen and (max-width: 480px){
+    .footer{
+        height: 10%;
+    }
 }
