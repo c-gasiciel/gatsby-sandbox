@@ -8,15 +8,13 @@ const Home = () =>{
     return(
         <PageSection sectionId="home">
             <div className={ homeContent }>
-                <p>IT solutions for small business</p>
-                <button className={ button }>
-                    <AniLink 
-                        className={ buttonText }  
-                        paintDrip
-                        hex="#FFFFFF"
-                        to="/servicesPage"
-                    >Learn More</AniLink>
-                </button>
+                <p>IT consulting solutions for business</p>  
+                <AniLink 
+                    className={ buttonText }  
+                    paintDrip
+                    hex="#FFFFFF"
+                    to="/servicesPage"
+                >Learn More</AniLink>
             </div>
         </PageSection>
     );

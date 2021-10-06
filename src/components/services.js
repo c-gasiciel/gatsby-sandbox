@@ -17,6 +17,14 @@ const Services = () => {
         <PageSectionTwoCol sectionId="services" pageHeader="Services">
                 <div className={ leftContainer}>
                 <h1 className={ sectionTitle }>Services</h1>
+                <p>
+                My Technology Firm LLC helps companies get the most benefit out of 
+                the technology that is required to efficiently operate their business. 
+                We offer a wide range of IT consulting services that include Onsite 
+                and Remote Help Desk support, Network Security, and Managed IT Services. 
+                We do assessments to discover security vulnerabilities and make 
+                recommendations. Here are some services we offer: 
+                </p>
                 <ul >
                     <li>Desktop Management
                         <ul>

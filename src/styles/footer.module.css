@@ -1,5 +1,5 @@
 .footer{
-    height: 10vh;
+    height: 8vh;
     padding: 1rem 1rem 5px 1rem;
     width: 100%;
 }
@@ -13,6 +13,6 @@
 /* Mobile styling */
 @media only screen and (max-width: 480px){
     .footer{
-        height: 10%;
+        height: 5%;
     }
 }

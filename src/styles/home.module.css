@@ -15,19 +15,16 @@
     text-transform: uppercase;
 }
 
-.button{
-    background-color: transparent;
-    border: 1px solid black;
-    padding: 1rem 3rem;
-}
-
-
 .button-text{
     color: black;
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
+
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 1rem 3rem;
 }
 
 .button-text:visted{

@@ -3,7 +3,7 @@
     box-sizing: border-box; 
     height: 100%;
     margin: 0 auto;
-    padding: 2% 5%;
+    padding: 1% 5% 1% 5%;
     width: 95%;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .section-title{
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     text-transform: uppercase;
     border-bottom: 1px solid rgb(105,214,251);
 }
@@ -29,15 +29,17 @@
     width: 55%;
 
     /*height: 100%;*/
-    /*background-color: red; */
+
 }
 
 .right-container{
     display: flex;
     flex-flow: column;
-    padding: 0rem 2rem 2rem 0rem;
+    padding: 0rem 2rem 0rem 0rem;
     width: 45%;
     /*height: 75vh;  */
+
+
 }
 
 

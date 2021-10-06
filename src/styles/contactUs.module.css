@@ -1,26 +1,5 @@
-/*.contact-box-container{
-    box-sizing: border-box; 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 3rem auto 1rem auto;
-    width: 90%;
-}
-
-.contact-box{
-    border: 1px solid black;
-    width: 45%;
-}
-
-.contact-box h3{
-    padding: 1rem;
-    font-size: 1.1rem;
-    text-align: center;
-} */
-
 .left-col{
-    padding-left: 2rem;
+    padding: 1rem 0rem 0rem 2rem;
     width: 40%;
 }
 
@@ -35,6 +14,7 @@
 .form-card{
     border: 1px solid black;
     padding: 2% 5% 5% 5%;
+    margin-top: 2%;
     max-height: 100%;
     width: 100%;
 }
