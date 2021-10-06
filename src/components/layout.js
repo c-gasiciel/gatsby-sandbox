@@ -45,6 +45,7 @@ const Layout = ({ pageTitle, children}) => {
 
     /* Get current pathname for styling */
     const { pathname } = useLocation();
+    console.log(pathname);
     const classes = `${ layoutContainer } 
                     ${pagesWithBackground.includes(pathname) ? layoutBg : layoutNoBg }`;
 
