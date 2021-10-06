@@ -33,10 +33,11 @@
 .right-container{
     display: flex;
     flex-flow: column;
+    padding: 0rem 2rem 2rem 0rem;
     width: 40%;
 
     height: 75vh;
-    background-color: yellow;
+    
 }
 
 .page-section:nth-of-type(1), .text-section:last-child{
