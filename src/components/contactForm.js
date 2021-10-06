@@ -10,7 +10,7 @@ const ContactForm = () =>{
 
     return(
         <section className={ formCard }>
-            <h2>Message Us</h2>
+            <h2>Send us a message</h2>
             <form 
                 action="https://getform.io/f/081909c6-3756-42c0-9e0e-f4b603ba2349"
                 method="POST"

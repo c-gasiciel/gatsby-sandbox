@@ -1,9 +1,15 @@
 import * as React from 'react'
-import ParallaxElementWrapper from '../components/parallaxElementWrapper';
+import Layout from '../components/layout';
+import PageSection from '../components/pageSection';
+
 
 const AboutPage = () => {
     return(
-        <ParallaxElementWrapper />
+        <Layout pageTitle="About Us">
+            <PageSection>
+                <h1>About Us</h1>
+            </PageSection>
+        </Layout>
     );
 }
 

@@ -8,13 +8,6 @@ const IndexPage = () => {
   return(
       <Layout pageTitle="Home Page">
         <Home />
-        <Services />
-        <div id="about-us">
-          <p>
-            About Us
-          </p>
-        </div>
-        < ContactUs />
       </Layout>
   )
 }

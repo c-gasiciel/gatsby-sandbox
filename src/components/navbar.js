@@ -1,6 +1,7 @@
 import React from 'react';
 import NavLink from './navLink';
 import PaintDripLink from './paintDripLink';
+import CoverNavLink from './coverNavLink';
 import { 
     navContainer,
     navLinks
@@ -10,13 +11,22 @@ const Navbar = () =>{
     return(
         <nav className={ navContainer }>
             <ul className={ navLinks }>
-                <NavLink linkURL="/" linkName="Home" />
+                <CoverNavLink 
+                    linkURL="/"
+                    swipeColor="#55C3EE"
+                    swipeDir="up" 
+                    linkName="Home" 
+                />
                 <PaintDripLink 
                     linkURL="/servicesPage"
                     dripColor="#FFFFFF" 
                     linkName="Services"
                 />
-                <NavLink linkURL="/#about-us" linkName="About Us" />
+                <CoverNavLink 
+                    linkURL="/about" 
+                    swipeColor="#55C3EE"
+                    swipeDir="down" 
+                    linkName="About Us" />
                 <PaintDripLink 
                     linkURL="/contact"
                     dripColor="#FFFFFF" 
