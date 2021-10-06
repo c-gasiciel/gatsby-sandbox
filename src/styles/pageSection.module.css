@@ -1,15 +1,42 @@
-.text-section{
+.page-section{
     background-color: transparent;
     box-sizing: border-box; 
-    height: 100vh;
+    height: 75vh;
     padding: 3rem 5%;
     width: 100%;
 }
 
-.text-section:nth-of-type(1), .text-section:last-child{
-    height: 90vh;
+.flex-container{
+    display: flex;
+    flex-flow: row;
+    margin: 0 auto;
 }
 
-.text-section:nth-of-type(2n){
-    background-color: aliceblue;
+.section-title{
+    padding: 2rem 2rem 1rem 2rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(105,214,251);
 }
+
+.left-container{
+    display: flex;
+    flex-flow: column;
+    padding: 0rem 2rem 0rem 5rem;
+    width: 60%;
+    /*background-color: red; */
+}
+
+.right-container{
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    /*background-color: green;*/
+}
+
+.page-section:nth-of-type(1), .text-section:last-child{
+    height: 75vh;
+}
+
+.page-section:nth-of-type(2n){
+    background-color: aliceblue;
+} 

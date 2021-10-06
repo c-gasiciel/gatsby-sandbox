@@ -19,6 +19,7 @@
     "babel-plugin-styled-components": "^1.13.2",
     "gatsby": "^3.12.1",
     "gatsby-plugin-gatsby-cloud": "^3.2.0",
+    "gatsby-plugin-global-context": "^1.0.0",
     "gatsby-plugin-image": "^1.14.0",
     "gatsby-plugin-sharp": "^3.14.0",
     "gatsby-plugin-styled-components": "^4.14.0",

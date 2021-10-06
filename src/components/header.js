@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import Navbar from './navbar';
 import {
     pageHeader,
+    pageHeaderNoBg,
     navLogo,
     rightHeader,
     headerContact

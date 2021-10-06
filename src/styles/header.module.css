@@ -7,6 +7,12 @@
     box-shadow: 0 0 1rem black; */
     padding: .2em 2em .2em 2em;
     color: black;
+    height: 15vh;
+}
+
+.page-header-no-bg{
+    background: rgba(51, 51, 51, 0.6);
+    box-shadow: 0 0 1rem black;
 }
 
 h1{
@@ -27,6 +33,10 @@ h1{
     margin: 1rem 0rem 0rem 0rem;
 }
 
+.page-header-no-bg .header-contact{
+    color: white;
+}
+
 
 
 .nav-logo{
@@ -42,4 +52,8 @@ h1{
 
 .nav-logo:visited{
     color: black;
+}
+
+.page-header-no-bg .nav-logo, .page-header-no-bg .nav-logo:visited{
+    color: white;
 }

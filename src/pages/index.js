@@ -3,8 +3,6 @@ import Layout from '../components/layout';
 import Home from '../components/home';
 import Services from '../components/services';
 import ContactUs from '../components/contactUs';
-import { StaticImage } from 'gatsby-plugin-image'
-import { homeContent, button } from '../styles/index.module.css';
 
 const IndexPage = () => {
   return(
