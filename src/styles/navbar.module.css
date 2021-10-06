@@ -12,3 +12,18 @@
     list-style: none;
     padding-left: 0;
 }
+
+/* Tablet and mobile styling */
+@media all and (max-width: 670px){
+    .nav-container{
+        flex-direction: column;
+        padding: 0rem 0rem 0rem 0rem;
+        width: 100%;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+}

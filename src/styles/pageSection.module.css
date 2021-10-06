@@ -1,7 +1,7 @@
 .page-section{
     background-color: transparent;
     box-sizing: border-box; 
-    height: 75vh;
+    height: 100%;
     margin: 0 auto;
     padding: 2% 5%;
     width: 95%;
@@ -13,7 +13,7 @@
     flex-flow: row;
     justify-content: space-between;
     margin: 0 auto;
-    height: 75vh;
+    height: 100%;
 }
 
 .section-title{
@@ -57,6 +57,8 @@
     }
 
     .right-container{
+        margin: 0rem auto 0rem auto;
+        padding: 1rem;
         width: 95%; 
     }
 

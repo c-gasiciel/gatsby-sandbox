@@ -20,5 +20,13 @@
 }
 
 .main-content{
-    /*height: 88%; */
+    height: 75vh;
 }
+
+/* Style for smaller laptop/desktop screens */
+@media all and (max-width: 1098px){
+    .main-content{
+      height: 100%;
+    }
+}
+
