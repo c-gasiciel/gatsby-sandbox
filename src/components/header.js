@@ -16,7 +16,7 @@ const Header = () =>{
                 <Link className={ navLogo } to="/">My Technology Firm</Link>
             </h1>
             <div className={ rightHeader }>
-                <p className={ headerContact }>Have a question or need a quote? (XXX)XXX-XXXX</p>
+                <p className={ headerContact }>Have a question or need a quote? (847)630-9939</p>
                 <Navbar />
             </div>
     </header>

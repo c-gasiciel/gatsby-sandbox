@@ -5,13 +5,13 @@ import {
     navLinkText
 } from '../styles/navLink.module.css';
 
-const PaintDripLink = ({linkURL, linkName}) => {
+const PaintDripLink = ({linkURL, dripColor, linkName}) => {
     return (
         <li className={navLinkItem}>
             <AniLink 
                 className={navLinkText}  
                 paintDrip
-                hex="#FFFFFF" 
+                hex={ dripColor }
                 to={linkURL}
             >{linkName}</AniLink>
         </li>

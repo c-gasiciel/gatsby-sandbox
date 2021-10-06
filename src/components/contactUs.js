@@ -1,20 +1,32 @@
 import * as React from 'react';
-import PageSection from './pageSection';
-import { contactBoxContainer, contactBox } from '../styles/contactUs.module.css';
+import ContactForm from './contactForm';
+import PageSectionTwoCol from './pageSectionTwoCol';
+import { 
+    contactBoxContainer, 
+    contactBox,
+    leftCol,
+    rightCol,
+    infoBox 
+} from '../styles/contactUs.module.css';
+import { 
+    sectionTitle
+} from '../styles/pageSection.module.css';
 
  const ContactUs = () =>{
     return(     
-        <PageSection sectionId="contact-us">
-            <h1>Contact Us</h1>
-            <div className={ contactBoxContainer }>
-                <section className={ contactBox }>
-                    <h3>Send us an email</h3>
-                </section>
-                <section className={ contactBox }>
-                    <h3>Send us a message</h3>
-                </section>
+        <PageSectionTwoCol sectionId="contact-us">
+            <div className={ leftCol } >
+                <h1 className={ sectionTitle }>Want to Know More?</h1>
+                <p>We are currently accepting clients within 30 miles of the Schaumburg, Illinois area.</p>
+                <div className={ infoBox }>
+                    <h2>Give us a call</h2>
+                    <p>Tel: (847)630-9939</p>
+                </div>
             </div>
-        </PageSection>
+            <div className={ rightCol }>
+                < ContactForm />
+            </div>
+        </PageSectionTwoCol>
      );
  }
 

@@ -13,7 +13,7 @@ import {
 
 
 /* Pages that should be styled to have a background */
-const pagesWithBackground = ['/', '/contact'];
+const pagesWithBackground = ['/'];
 
 
 const Layout = ({ pageTitle, children}) => {

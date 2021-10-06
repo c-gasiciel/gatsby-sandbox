@@ -18,3 +18,56 @@
     font-size: 1.1rem;
     text-align: center;
 }
+
+.left-col{
+    padding-left: 2rem;
+    width: 40%;
+}
+
+.right-col{
+    width: 55%;
+}
+
+.info-box{
+    margin: 2rem 0rem 1rem 0rem;
+}
+
+.form-card{
+    border: 1px solid black;
+    padding: 2rem;
+    width: 100%;
+}
+
+h2{
+    font-size: 1.2rem;
+}
+
+.form-card h2{
+    text-align: center;
+}
+
+.contact-form{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+}
+
+.form-input{
+    padding: .5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.form-input[type="textarea"]{
+    height: 10rem;
+}
+
+.form-button{
+    border: none;
+    background-color: rgb(84,174,206);
+    color: white;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    padding: .8rem;
+    text-transform: uppercase;
+}
