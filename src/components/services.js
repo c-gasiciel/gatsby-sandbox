@@ -40,7 +40,7 @@ const Services = () => {
                     <StaticImage 
                         alt="People working together using a laptop and notebook"
                         src="../images/headset-on-keyboard-sm.jpg"
-                        className={ circularImage }
+                        layout="constrained"
                     />
                 </div>
         </PageSectionTwoCol>
