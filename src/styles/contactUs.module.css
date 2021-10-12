@@ -59,8 +59,8 @@ h2{
     background-color: black;
 }
 
-/* Mobile styling */
-@media only screen and (max-width: 480px){
+/* Styling for narrower tablet screens and mobile devices */
+@media only screen and (max-width: 600px){
     .left-col{
         margin: 3rem auto 2rem auto;
         padding-left: 0rem;
