@@ -43,9 +43,8 @@
 }
 
 
-
-/* Mobile styling */
-@media only screen and (max-width: 480px){
+/* Styling for narrower tablets and mobile */
+@media only screen and (max-width: 600px){
     .page-section{
         height: 100%;
     }
@@ -69,3 +68,31 @@
         width: 95%;
     }
 }
+
+
+
+/* Mobile styling 
+@media only screen and (max-width: 480px){
+    .page-section{
+        height: 100%;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-flow: column;
+        align-content: center;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .right-container{
+        margin: 0rem auto 0rem auto;
+        padding: 1rem;
+        width: 95%; 
+    }
+
+    .left-container{
+        margin: 3rem auto 2rem auto;
+        width: 95%;
+    }
+} */
