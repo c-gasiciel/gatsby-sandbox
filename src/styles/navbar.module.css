@@ -7,11 +7,7 @@
     margin: 0;
 }
 
-.nav-links{
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-}
+
 
 /* Tablet and mobile styling */
 @media all and (max-width: 670px){
@@ -21,9 +17,4 @@
         width: 100%;
     }
 
-    .nav-links{
-        flex-direction: column;
-        width: 100%;
-        
-    }
 }
