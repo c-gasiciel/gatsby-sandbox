@@ -67,9 +67,10 @@ export default Layout;
 
 
 const MainContainer = styled.main` 
-    min-height: 77vh;
+    height: 77vh;
 
     @media all and (max-width: 1098px){
-          height: 100%;
+        min-height: 70vh;
+        height: 100%;
     }
 `
