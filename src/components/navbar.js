@@ -46,9 +46,9 @@ const Bars = styled(FiMenu) `
 
     @media screen and (max-width: 736px){
         display: block;
-        padding: 0.5rem;
+        padding: 0rem 0rem;
         position: absolute;
-        font-size: 1.8rem;
+        font-size: 2rem;
         cursor: pointer;
     }
 `
