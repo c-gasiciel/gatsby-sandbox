@@ -9,13 +9,13 @@ import {
 
 const Header = () =>{
     return(
-        <header className={ pageHeader }>
+        <PageHeader>
             <NavLogo to="/">My Technology Firm</NavLogo>
             <RightHeader>
                 <HeaderContact>Have a question or need a quote? (847)630-9939</HeaderContact>
                 <Navbar />
             </RightHeader>
-    </header>
+    </PageHeader>
     );
 }
 
@@ -23,27 +23,44 @@ export default Header;
 
 
 const PageHeader = styled.header` 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*background: rgba(51, 51, 51, 0.6);
+    box-shadow: 0 0 1rem black; */ 
+    padding: 1em 2em .2em 2em;
+    color: black;
+    height: 15vh;
+    x-index: 10;
 
+    @media all and (max-width: 1044px){
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    @media all and (max-width: 763px){
+        background-color: red;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 `
 
 const NavLogo = styled(Link)` 
     border: solid 1px black;
     color: black;
-    font-size: 2rem;
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
     font-weight: 800;
-    height: 100%;
     padding: 1rem;
     text-decoration: none;
     text-transform: uppercase;
-    margin-right: 0.5rem;
+    margin-right: 0.2rem;
+    white-space: no-wrap;
+
+    background-color: blue;
 
     &:visited{
         color: black;
-    }
-
-    @media screen and (max-width: 1098px){
-        font-size: 1.5rem;
-        margin: 1rem auto 0rem auto;
     }
 `
 
@@ -53,11 +70,19 @@ const RightHeader = styled.div`
     flex-direction: column;
     justify-content: center;
 
-    @media all and (max-width: 1098px){
+    background-color: yellow;
+
+    @media all and (max-width: 1044px){
         justify-content: center;
         align-items: center;
-        margin-top: 1.1rem;
+        margin-top: 0.1rem;
         width: 90%;
+    }
+
+    @media all and (max-width: 763px){
+        height: 100%;
+        margin-top: 0;
+        width: 30%;
     }
 `
 
@@ -70,7 +95,7 @@ const HeaderContact = styled.p`
     padding: 0;
     margin: 1rem 0rem 0rem 0rem;
 
-    @media screen and (max-width: 1098px){
+    @media screen and (max-width: 1044px){
         display: none;
     }
 `

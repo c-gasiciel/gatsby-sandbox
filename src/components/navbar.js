@@ -70,7 +70,7 @@ const MenuToggleContainer = styled.button`
     border: none;
     display: none;
 
-    @media screen and (max-width: 736px){
+    @media screen and (max-width: 763px){
         display: block;
         padding: 0rem 0rem;
         position: absolute;
@@ -89,7 +89,7 @@ const NavLinksContainer = styled.ul`
     list-style: none;
     padding-left: 0;
 
-    @media screen and (max-width: 736px){
+    @media screen and (max-width: 763px){
         flex-direction: column;
         height: 100vh;
         position: absolute;
