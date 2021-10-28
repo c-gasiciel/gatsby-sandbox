@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FiMenu } from 'react-icons/fi';
 import PaintDripLink from './paintDripLink';
@@ -9,10 +9,34 @@ import {
 } from '../styles/navbar.module.css';
 
 const Navbar = () =>{
+    //Track if navigation should be open or closed
+    const [isOpen, setIsOpen] = useState(false);
+
+    //Open or close menu if menu icon is clicked
+    function toggleMenu(){
+        if(isOpen){
+            setIsOpen(false);
+        }
+        else{
+            setIsOpen(true);
+        }
+    }
+
+    let button;
+
+    if (isOpen){
+        button = 'X';
+    }
+    else{
+        button = <Bars />
+    }
+
     return(
         <nav className={ navContainer }>
-            <Bars />
-            <NavLinksContainer>
+            <MenuToggleContainer onClick={toggleMenu} >
+                { button }
+            </MenuToggleContainer>
+            <NavLinksContainer open={ isOpen }>
                 <CoverNavLink 
                     linkURL="/"
                     swipeColor="#55C3EE"
@@ -41,16 +65,22 @@ const Navbar = () =>{
 
 export default Navbar;
 
-const Bars = styled(FiMenu) `
+const MenuToggleContainer = styled.button` 
+    background: blue;
+    border: none;
     display: none;
 
     @media screen and (max-width: 736px){
         display: block;
         padding: 0rem 0rem;
         position: absolute;
-        font-size: 2rem;
         cursor: pointer;
+        font-size: 2rem;
     }
+`
+
+const Bars = styled(FiMenu) `
+    font-size: 2rem;
 `
 
 
@@ -60,8 +90,11 @@ const NavLinksContainer = styled.ul`
     padding-left: 0;
 
     @media screen and (max-width: 736px){
-        display: none;
         flex-direction: column;
+        height: 100vh;
+        position: absolute;
         width: 100%;
+        transition: transform 0.3s ease-in-out;
+        transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
     }
 `
