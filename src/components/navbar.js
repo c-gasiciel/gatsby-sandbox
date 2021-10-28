@@ -4,39 +4,10 @@ import { FiMenu } from 'react-icons/fi';
 import PaintDripLink from './paintDripLink';
 import CoverNavLink from './coverNavLink';
 
-import { 
-    navContainer,
-} from '../styles/navbar.module.css';
-
-const Navbar = () =>{
-    //Track if navigation should be open or closed
-    const [isOpen, setIsOpen] = useState(false);
-
-    //Open or close menu if menu icon is clicked
-    function toggleMenu(){
-        if(isOpen){
-            setIsOpen(false);
-        }
-        else{
-            setIsOpen(true);
-        }
-    }
-
-    let button;
-
-    if (isOpen){
-        button = 'X';
-    }
-    else{
-        button = <Bars />
-    }
-
+const Navbar = ({ open }) =>{
     return(
-        <nav className={ navContainer }>
-            <MenuToggleContainer onClick={toggleMenu} >
-                { button }
-            </MenuToggleContainer>
-            <NavLinksContainer open={ isOpen }>
+        <NavContainer open={ open } >
+            <NavLinksContainer>
                 <CoverNavLink 
                     linkURL="/"
                     swipeColor="#55C3EE"
@@ -59,30 +30,35 @@ const Navbar = () =>{
                     linkName="Contact Us" 
                 />
             </NavLinksContainer>
-        </nav>
+        </NavContainer>
     );
 }
 
 export default Navbar;
 
-const MenuToggleContainer = styled.button` 
-    background: blue;
-    border: none;
-    display: none;
+const NavContainer = styled.nav` 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 0 0rem 0;
+    margin: 0;
 
-    @media screen and (max-width: 763px){
-        display: block;
-        padding: 0rem 0rem;
+    @media all and (max-width: 763px){
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 0rem 0rem 0rem;
+        width: 45%;
+
+        height: 100vh;
+        background-color: red;
         position: absolute;
-        cursor: pointer;
-        font-size: 2rem;
+        top: 15vh;
+        right: 0;
+        transition: transform 0.3s ease-in-out;
+        transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     }
 `
-
-const Bars = styled(FiMenu) `
-    font-size: 2rem;
-`
-
 
 const NavLinksContainer = styled.ul`
     display: flex;
@@ -92,9 +68,28 @@ const NavLinksContainer = styled.ul`
     @media screen and (max-width: 763px){
         flex-direction: column;
         height: 100vh;
+        padding-top: 1rem;
         position: absolute;
         width: 100%;
-        transition: transform 0.3s ease-in-out;
-        transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
     }
+`
+
+const MenuToggleContainer = styled.button` 
+    background: blue;
+    display: none;
+
+    @media screen and (max-width: 763px){
+        border: none;
+        display: block;
+        height: 10%;
+        width: 10%;
+        padding: 0rem 0rem;
+        position: absolute;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+`
+
+const Bars = styled(FiMenu) `
+    font-size: 2rem;
 `

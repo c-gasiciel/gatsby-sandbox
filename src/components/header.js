@@ -1,18 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import { FiMenu } from 'react-icons/fi';
 import Navbar from './navbar';
-import {
-    pageHeader,
-    pageHeaderNoBg,
-} from '../styles/header.module.css';
+
 
 const Header = () =>{
+    //Track if navigation should be open or closed
+    const [isOpen, setIsOpen] = useState(false);
+
+    //Open or close menu if menu icon is clicked
+    function toggleMenu(){
+        if(isOpen){
+            setIsOpen(false);
+        }
+        else{
+            setIsOpen(true);
+        }
+    }
+
+    let button;
+
+    if (isOpen){
+        button = 'X';
+    }
+    else{
+        button = <Bars />
+    }
+
     return(
         <PageHeader>
             <NavLogo to="/">My Technology Firm</NavLogo>
             <RightHeader>
                 <HeaderContact>Have a question or need a quote? (847)630-9939</HeaderContact>
+                <MenuToggleContainer onClick={ toggleMenu } >
+                    { button }
+                </MenuToggleContainer>
                 <Navbar />
             </RightHeader>
     </PageHeader>
@@ -40,7 +63,6 @@ const PageHeader = styled.header`
     }
 
     @media all and (max-width: 763px){
-        background-color: red;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -49,15 +71,13 @@ const PageHeader = styled.header`
 const NavLogo = styled(Link)` 
     border: solid 1px black;
     color: black;
-    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
     font-weight: 800;
     padding: 1rem;
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 0.2rem;
     white-space: no-wrap;
-
-    background-color: blue;
 
     &:visited{
         color: black;
@@ -70,10 +90,7 @@ const RightHeader = styled.div`
     flex-direction: column;
     justify-content: center;
 
-    background-color: yellow;
-
     @media all and (max-width: 1044px){
-        justify-content: center;
         align-items: center;
         margin-top: 0.1rem;
         width: 90%;
@@ -98,4 +115,24 @@ const HeaderContact = styled.p`
     @media screen and (max-width: 1044px){
         display: none;
     }
+`
+
+const MenuToggleContainer = styled.button` 
+    display: none;
+
+    @media screen and (max-width: 763px){
+        background-color: transparent;
+        border: none;
+        display: block;
+        height: 10%;
+        width: 10%;
+        padding: 0rem 0rem;
+        position: absolute;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+`
+
+const Bars = styled(FiMenu) `
+    font-size: 2rem;
 `
