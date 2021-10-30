@@ -36,7 +36,7 @@ const Header = () =>{
                 <MenuToggleContainer onClick={ toggleMenu } >
                     { button }
                 </MenuToggleContainer>
-                <Navbar />
+                <Navbar open={ isOpen } />
             </RightHeader>
     </PageHeader>
     );
@@ -55,11 +55,12 @@ const PageHeader = styled.header`
     padding: 1em 2em .2em 2em;
     color: black;
     height: 15vh;
-    x-index: 10;
+    z-index: 10;
 
     @media all and (max-width: 1044px){
         flex-direction: column;
         justify-content: flex-start;
+        height: 20%;
     }
 
     @media all and (max-width: 763px){

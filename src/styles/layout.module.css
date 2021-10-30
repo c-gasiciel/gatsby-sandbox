@@ -19,14 +19,3 @@
   background-color: aliceblue;
 }
 
-.main-content{
-    height: 77vh;
-}
-
-/* Style for smaller laptop/desktop screens */
-@media all and (max-width: 1098px){
-    .main-content{
-      height: 100%;
-    }
-}
-

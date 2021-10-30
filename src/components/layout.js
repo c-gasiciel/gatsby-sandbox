@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useEffect, useState } from 'react';
 import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components'
@@ -27,21 +26,6 @@ const Layout = ({ pageTitle, children}) => {
             }
         }
     `);
-
-
-    const [ offset, setOffset ] = useState(0)
-
-    useEffect(() => {
-        function handleScroll(){
-            setOffset(window.pageYOffset)
-        }
-
-        window.addEventListener("scroll", handleScroll)
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll)
-        }
-    }, []) 
 
 
     /* Get current pathname for styling */

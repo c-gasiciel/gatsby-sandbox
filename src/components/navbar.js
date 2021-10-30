@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { FiMenu } from 'react-icons/fi';
 import PaintDripLink from './paintDripLink';
 import CoverNavLink from './coverNavLink';
 
@@ -48,15 +47,17 @@ const NavContainer = styled.nav`
         flex-direction: column;
         justify-content: center;
         padding: 0rem 0rem 0rem 0rem;
-        width: 45%;
+        width: 60%;
 
         height: 100vh;
-        background-color: red;
+        background-color: #F0F8FF;
+        box-shadow: 1px 0px 1rem black;
         position: absolute;
-        top: 15vh;
-        right: 0;
+        top: 0vh;
+        left: 0;
         transition: transform 0.3s ease-in-out;
-        transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+        transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-105%)'};
+        z-index: 5;
     }
 `
 
@@ -68,28 +69,8 @@ const NavLinksContainer = styled.ul`
     @media screen and (max-width: 763px){
         flex-direction: column;
         height: 100vh;
-        padding-top: 1rem;
+        padding: 4rem 0rem 0rem 1rem;
         position: absolute;
         width: 100%;
     }
-`
-
-const MenuToggleContainer = styled.button` 
-    background: blue;
-    display: none;
-
-    @media screen and (max-width: 763px){
-        border: none;
-        display: block;
-        height: 10%;
-        width: 10%;
-        padding: 0rem 0rem;
-        position: absolute;
-        cursor: pointer;
-        font-size: 1.5rem;
-    }
-`
-
-const Bars = styled(FiMenu) `
-    font-size: 2rem;
 `
