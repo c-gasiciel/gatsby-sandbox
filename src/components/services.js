@@ -1,15 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import {StaticImage} from 'gatsby-plugin-image'
-import PageSectionTwoCol from './pageSectionTwoCol';
-import { 
-    leftContainer,
-    rightContainer, 
-    sectionTitle
-} from '../styles/pageSection.module.css';
-import {
-    circularImage
-} from '../styles/services.module.css';
+import {StaticImage} from 'gatsby-plugin-image';
 
 
 const Services = () => {
@@ -27,27 +18,48 @@ const Services = () => {
                 recommendations. Here are some services we offer: 
                 </p>
                 <ul >
-                    <li>Desktop Management
+                    <PrimaryListItem>
+                        Onsite and remote help desk support
+                    </PrimaryListItem>
+                    <PrimaryListItem>Desktop Management
                         <ul>
-                            <li>Track and Manage Assets</li>
-                            <li>Deploy Computers</li>
-                            <li>Upgrade / Refresh Computers</li>
-                            <li>Install and migrate Data</li>
+                            <li>Track and manage assets</li>
+                            <li>Deploy computers</li>
+                            <li>Upgrade computers</li>
+                            <li>Install and migrate data</li>
                         </ul>
-                    </li>
-                    <li>Disaster management
+                    </PrimaryListItem>
+                    <PrimaryListItem>Disaster management
                         <ul>
                             <li>IT recovery strategies</li>
+                            <li>Data backup</li>
                         </ul>
-                    </li>
-                    <li>Cyber Security</li>
-                    <li>Discovery and Assessment of IT environment</li>
-                    <li>Network management</li>
+                    </PrimaryListItem>
+                    <PrimaryListItem>Cyber Security
+                        <ul>
+                            <li>Firewall</li>
+                            <li>Endpoint detection and response</li>
+                            <li>Antivirus</li>
+                            <li>Malware protection</li>
+                            <li>Email spam filtering</li>
+                        </ul>
+                    </PrimaryListItem>
+                    <PrimaryListItem>
+                        Discovery and Assessment of IT environment
+                    </PrimaryListItem>
+                    <PrimaryListItem>Telecommunications Consulting
+                        <ul>
+                            <li>Unified communications solutions (GoToConnect)</li>
+                        </ul>
+                    </PrimaryListItem>
+                    <PrimaryListItem>
+                        Network management
+                    </PrimaryListItem>
                 </ul>
             </LeftCol>
             <RightCol>
                 <StaticImage 
-                    alt="People working together using a laptop and notebook"
+                    alt="A laptop keyboard with a headset resting on top"
                     src="../images/headset-on-keyboard-sm.jpg"
                     layout="constrained"
                 />
@@ -114,4 +126,8 @@ const SectionTitle = styled.h1`
     @media screen and (max-width: 736px){
         text-align: center;
     }
+`
+
+const PrimaryListItem = styled.li` 
+    padding-bottom: 0.5rem;
 `
