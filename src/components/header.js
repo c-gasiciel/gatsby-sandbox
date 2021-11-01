@@ -72,8 +72,8 @@ const PageHeader = styled.header`
 const NavLogo = styled(Link)` 
     border: solid 1px black;
     color: black;
-    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-    font-weight: 800;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: 750;
     padding: 1rem;
     text-decoration: none;
     text-transform: uppercase;
