@@ -45,7 +45,7 @@ const FlexContainer = styled.div`
     background-color: transparent;
     box-sizing: border-box; 
     height: 100%;
-    padding: 1% 5% 1% 5%;
+    padding: 3% 5% 1% 5%;
     width: 95%;
 
     @media screen and (max-width: 736px){
