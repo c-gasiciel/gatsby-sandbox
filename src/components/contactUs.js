@@ -34,7 +34,7 @@ import ContactForm from './contactForm';
 
     background-color: transparent;
     box-sizing: border-box; 
-    padding: 1% 5% 1% 5%;
+    padding: 2% 5% 1% 5%;
     width: 90%;
 
     @media screen and (max-width: 736px){
@@ -71,7 +71,11 @@ import ContactForm from './contactForm';
     text-transform: uppercase;
     border-bottom: 1px solid rgb(105,214,251);
 
-    @media screen and (max-width: 736px){
+    @media all and (max-width: 1044px){
+        padding: 0rem 2rem 1rem 0rem;
+    }
+
+    @media all and (max-width: 736px){
         text-align: center;
     }
  `

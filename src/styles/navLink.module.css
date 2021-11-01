@@ -1,6 +1,12 @@
 .nav-link-item{
     margin: 0.5rem 1rem 0rem 2rem;
+
+    @media all and (max-width: 763px){
+        margin: 1rem 1rem 0rem 2rem;
+    }
 }
+
+
 
 .nav-link-text{
     color: black;
@@ -11,6 +17,10 @@
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
+
+    @media all and (max-width: 763px){
+        padding: 1rem 0rem .5rem 0rem;
+    }
 }
 
 .nav-link-text::after {

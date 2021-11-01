@@ -78,10 +78,10 @@ const FlexContainer = styled.div`
     background-color: transparent;
     box-sizing: border-box; 
     height: 100%;
-    padding: 1% 5% 1% 5%;
+    padding: 3% 5% 1% 5%;
     width: 95%;
 
-    @media screen and (max-width: 736px){
+    @media screen and (max-width: 763px){
         display: flex;
         flex-flow: column;
         align-content: center;
@@ -93,10 +93,10 @@ const FlexContainer = styled.div`
 const LeftCol = styled.div` 
     display: flex;
     flex-flow: column;
-    padding: 0rem 2rem 0rem 5rem;
+    padding: 0rem 2rem 0rem 2rem;
     width: 55%;
 
-    @media screen and (max-width: 736px){
+    @media screen and (max-width: 763px){
         margin: 3rem auto 2rem auto;
         padding: 0;
         width: 90%;
@@ -107,11 +107,11 @@ const RightCol = styled.div`
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
-    padding: 0rem 2rem 0rem 0rem;
+    justify-content: flex-start;
+    padding: 1rem 4rem 0rem 0rem;
     width: 45%;
 
-    @media screen and (max-width: 736px){
+    @media screen and (max-width: 763px){
         margin: 0rem auto 2rem auto;
         padding: 1rem;
         width: 90%;
@@ -123,7 +123,7 @@ const SectionTitle = styled.h1`
     text-transform: uppercase;
     border-bottom: 1px solid rgb(105,214,251); 
 
-    @media screen and (max-width: 736px){
+    @media screen and (max-width: 763px){
         text-align: center;
     }
 `
