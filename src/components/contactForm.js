@@ -16,6 +16,7 @@ const ContactForm = () =>{
                 method="POST"
                 enctype="multipart/form-data"
                 className={ contactForm }
+                autocomplete="off"
             >
                 <label>Name*</label>
                 <input type="text" name="name" className={ formInput } required/>
