@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { FiMenu } from 'react-icons/fi';
+import { MdOutlineEmail } from 'react-icons/md';
 import Navbar from './navbar';
 
 
@@ -32,7 +33,10 @@ const Header = () =>{
         <PageHeader>
             <NavLogo to="/">My Technology Firm</NavLogo>
             <RightHeader>
-                <HeaderContact>Have a question or need a quote? (847)630-9939</HeaderContact>
+                <HeaderContact>Have a question or need a quote?
+                    <MailIcon /> 
+                    rarceo@mytechnologyfirm.com
+                </HeaderContact>
                 <MenuToggleContainer onClick={ toggleMenu } >
                     { button }
                 </MenuToggleContainer>
@@ -107,10 +111,13 @@ const RightHeader = styled.div`
 
 const HeaderContact = styled.p` 
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     font-size: .8rem;
     color: black;
     padding: 0;
+    position: absolute;
+    right: 1rem;
+    top: 0;
     margin: 1rem 0rem 0rem 0rem;
 
     @media screen and (max-width: 1044px){
@@ -136,4 +143,8 @@ const MenuToggleContainer = styled.button`
 
 const Bars = styled(FiMenu) `
     font-size: 2rem;
+`
+
+const MailIcon = styled(MdOutlineEmail)` 
+    margin: 0rem 0.2rem 0rem 0.5rem;
 `
